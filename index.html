@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professor Hugo Marcelo | Especialista em Esporte Infantil</title>
     
+    <!-- Ícone da aba do navegador (Favicon) -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
@@ -259,7 +262,8 @@
             .nav-brand { font-size: 1rem; }
             .nav-brand img { height: 35px; }
             
-            .hero { grid-template-columns: 1fr; grid-template-areas: "title" "img" "desc"; gap: 20px; text-align: center; }
+            /* HERO: Título em cima, Texto e Botões, e Imagem por último */
+            .hero { grid-template-columns: 1fr; grid-template-areas: "title" "desc" "img"; gap: 20px; text-align: center; }
             .hero h1 { font-size: 2.3rem; }
             .hero-img-box { justify-content: center; margin: 10px 0; }
             .hero-img { max-height: 400px; border-radius: 24px; }
@@ -272,9 +276,10 @@
                 justify-content: center;
                 gap: 10px; 
                 width: 100%;
+                margin-top: 20px;
             }
-            .hero-buttons .btn { flex: 1; min-width: 130px; padding: 12px 5px; font-size: 0.8rem; }
-            .hero-buttons .btn:first-child { min-width: 100%; padding: 14px 20px; font-size: 0.9rem; }
+            .hero-buttons .btn { flex: 1 1 calc(50% - 10px); min-width: 130px; padding: 12px 5px; font-size: 0.8rem; }
+            .hero-buttons .btn:first-child { flex: 1 1 100%; min-width: 100%; padding: 14px 20px; font-size: 0.9rem; }
             
             .skill-tree-container { grid-template-columns: 1fr; }
             .pricing-grid { grid-template-columns: 1fr; }
